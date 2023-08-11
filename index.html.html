@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Apology and Love</title>
+<style>
+  body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    background-color: #f7d6e0;
+    overflow-x: hidden;
+  }
+  .container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    background-image: url('background.jpg');
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+  }
+  .content {
+    position: relative;
+    background-color: rgba(255, 255, 255, 0.9);
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.3);
+    text-align: center;
+  }
+  .content img {
+    width: 300px;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 50%;
+    transition: transform 0.3s ease-in-out;
+  }
+  .content img:hover {
+    transform: scale(1.1);
+  }
+  .love-button {
+    background-color: #ff66b2;
+    border: none;
+    color: white;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 18px;
+    margin-top: 20px;
+    transition: background-color 0.3s ease-in-out;
+  }
+  .love-button:hover {
+    background-color: #ff3385;
+  }
+  .heart-shape {
+    position: absolute;
+    top: -10px;
+    left: 50%;
+    transform: translateX(-50%);
+    font-size: 75px;
+    color: #ff66b2;
+    animation: float 2s ease-in-out infinite;
+  }
+  @keyframes float {
+    0%, 100% {
+      transform: translateX(-50%) translateY(0);
+    }
+    50% {
+      transform: translateX(-50%) translateY(-10px);
+    }
+  }
+</style>
+</head>
+<body>
+<div class="container">
+  <div class="content">
+    <div class="heart-shape">&hearts;</div>
+    <img src="sorry.jpg" alt="Boyfriend" />
+    <h1>Sorry...</h1>
+    <p>I messed up, and I'm truly sorry for losing my cool and yelling at you.</p>
+    <p>It was unfair and i regret it I know you are worried about me and i did stupid thing</p>
+    <br>
+    <h3>Please clik the button for forgive me</h3>
+    
+    <button class="love-button" onclick="showLovePage()">Show Love</button>
+  </div>
+</div>
+<script>
+  function showLovePage() {
+    window.location.href = "love-page.html";
+  }
+</script>
+</body>
+</html>
